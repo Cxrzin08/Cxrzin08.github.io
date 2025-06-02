@@ -1,35 +1,31 @@
-import project1Img from '../assets/project1.jpg'; // Substitua por suas imagens
-import project2Img from '../assets/project2.jpg';
-import project3Img from '../assets/project3.jpg';
-import project4Img from '../assets/project4.jpg';
-import project5Img from '../assets/project5.jpg';
+import React from 'react';
 
 function Projects() {
   const projects = [
     {
       title: 'Landing Page para E-commerce',
       description: 'Uma landing page otimizada para conversão, com design responsivo e integração com Google Analytics.',
-      image: project1Img,
+      image: 'https://via.placeholder.com/300x200?text=Projeto+1',
     },
     {
       title: 'Sistema de Login Seguro',
       description: 'Sistema de autenticação com JWT, integrado a um backend em Node.js, com suporte a login social.',
-      image: project2Img,
+      image: 'https://via.placeholder.com/300x200?text=Projeto+2',
     },
     {
       title: 'App de Envio de Mensagens',
       description: 'Aplicativo web para envio de mensagens automatizadas via WhatsApp, com integração de API.',
-      image: project3Img,
+      image: 'https://via.placeholder.com/300x200?text=Projeto+3',
     },
     {
       title: 'Aplicativo Desktop',
       description: 'App desktop em Java para gerenciamento de tarefas, com interface gráfica e banco de dados local.',
-      image: project4Img,
+      image: 'https://via.placeholder.com/300x200?text=Projeto+4',
     },
     {
       title: 'Automação de Processos',
       description: 'Script em Python para automação de tarefas repetitivas, como extração de dados de PDFs.',
-      image: project5Img,
+      image: 'https://via.placeholder.com/300x200?text=Projeto+5',
     },
   ];
 
