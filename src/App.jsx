@@ -1,16 +1,15 @@
-import './App.css';
-import Header from './components/Header';
-import Stack from './components/Stack';
-import Projects from './components/Projects';
+import Header from './components/Header'
+import Stack from './components/Stack'
+import Projetos from './components/Projetos'
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Stack />
-      <Projects />
+      <Projetos />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
