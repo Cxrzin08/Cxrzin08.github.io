@@ -11,8 +11,8 @@ function Header() {
             className="profile-photo"
           />
           <div className="profile-info">
-            <h1 className="name">Seu Nome</h1>
-            <p className="age">25 anos</p>
+            <h1 className="name">Felipe Pereira</h1>
+            <p className="age">17 Anos</p>
             <p className="role">Desenvolvedor Full Stack</p>
           </div>
         </div>

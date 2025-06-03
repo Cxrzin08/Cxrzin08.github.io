@@ -4,38 +4,31 @@ function Projetos() {
   const projetos = [
     {
       id: 1,
-      titulo: "Landing Page Corporativa",
-      descricao: "Landing page moderna e responsiva para empresa de tecnologia, com formulário de contato e integração com APIs.",
+      titulo: "Landing Pages Profissionais",
+      descricao: "Landing pages moderna e responsiva para empresas, focada em conversão e usabilidade.",
       imagem: "/img/projeto1.jpg",
-      tecnologias: ["React", "CSS3", "JavaScript"]
+      tecnologias: ["HTML", "CSS", "JavaScript"]
     },
     {
       id: 2,
-      titulo: "Sistema de Login Seguro",
-      descricao: "Sistema de autenticação completo com JWT, recuperação de senha e validação em tempo real.",
+      titulo: "Sistemas de Logins e Autenticação",
+      descricao: "Sistema de autenticação completo com recuperação de senha e validação em tempo real.",
       imagem: "/img/projeto2.jpg",
-      tecnologias: ["Python", "React", "JWT"]
-    },
-    {
-      id: 3,
-      titulo: "App de Mensagens",
-      descricao: "Aplicativo de mensagens em tempo real com chat, notificações push e interface intuitiva.",
-      imagem: "/img/projeto3.jpg",
-      tecnologias: ["Kotlin", "Firebase", "WebSocket"]
+      tecnologias: ["Python", "E-mail", "SQL"]
     },
     {
       id: 4,
-      titulo: "Sistema de Automação",
-      descricao: "Plataforma de automação de processos empresariais com dashboard administrativo e relatórios.",
+      titulo: "Sistema de Automação de Envio de Mensagens em Massa pelo WhatsApp Web",
+      descricao: "Sistema de automação para envio de mensagens em massa pelo WhatsApp Web utilizando PyAutoGUI, com interface de controle e agendamento de campanhas.",
       imagem: "/img/projeto4.jpg",
-      tecnologias: ["Java", "Spring Boot", "React"]
+      tecnologias: ["Python", "PyAutoGUI", "Selenium"]
     },
     {
       id: 5,
-      titulo: "App Desktop de Gestão",
-      descricao: "Aplicação desktop para gestão de inventário com banco de dados local e exportação de relatórios.",
+      titulo: "Baixador de Músicas Desktop",
+      descricao: "Aplicação desktop para download e conversão de músicas do Spotify e YouTube para formato MP3, com interface intuitiva e processamento local.",
       imagem: "/img/projeto5.jpg",
-      tecnologias: ["Java", "JavaFX", "SQLite"]
+      tecnologias: ["Python", "SQLite", "FFmpeg"]
     }
   ]
 
