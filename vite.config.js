@@ -18,5 +18,7 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
+    assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg', '**/*.gif', '**/*.webp'],
   },
+  publicDir: 'public',
 });
