@@ -6,9 +6,13 @@ function Header() {
       <div className="container">
         <div className="profile">
           <img 
-            src="${import.meta.env.BASE_URL}assets/minha-foto.jpg" 
+            src={`${import.meta.env.BASE_URL}assets/minha-foto.jpg`}
             alt="Minha foto" 
             className="profile-photo"
+            onError={(e) => {
+              console.error('Erro ao carregar foto de perfil:', e.target.src);
+              e.target.style.display = 'none';
+            }}
           />
           <div className="profile-info">
             <h1 className="name">Felipe Pereira</h1>
