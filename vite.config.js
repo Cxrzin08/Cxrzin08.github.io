@@ -49,7 +49,7 @@ export default defineConfig({
   base: '/cxrzin-potfolio.github.io/',
   server: {
     allowedHosts: [
-      'cxrzin-potfolio.onrender.com'
+      'https://cxrzinportifoly.onrender.com'
     ]
   },
   build: {
