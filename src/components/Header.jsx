@@ -6,7 +6,7 @@ function Header() {
       <div className="container">
         <div className="profile">
           <img 
-            src="src/assets/minha-foto.jpg" 
+            src="${import.meta.env.BASE_URL}assets/minha-foto.jpg" 
             alt="Minha foto" 
             className="profile-photo"
           />
