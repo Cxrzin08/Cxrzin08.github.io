@@ -48,9 +48,18 @@ export default defineConfig({
   plugins: [react(), copyAssetsPlugin()],
   base: '/cxrzin-potfolio.github.io/',
   server: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 5173,
     allowedHosts: [
-      'https://cxrzinportifoly.onrender.com'
+      'cxrzinportifoly.onrender.com',
+      'cxrzin-potfolio.onrender.com',
+      'localhost',
+      '127.0.0.1'
     ]
+  },
+  preview: {
+    host: '0.0.0.0',
+    port: process.env.PORT || 4173
   },
   build: {
     outDir: 'dist',
