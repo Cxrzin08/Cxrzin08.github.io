@@ -6,28 +6,28 @@ function Projetos() {
       id: 1,
       titulo: "Landing Pages Profissionais",
       descricao: "Landing pages moderna e responsiva para empresas, focada em conversão e usabilidade.",
-      imagem: "/img/projeto1.jpg",
+      imagem: "src/assets/projeto1.jpg",
       tecnologias: ["HTML", "CSS", "JavaScript"]
     },
     {
       id: 2,
       titulo: "Sistemas de Logins e Autenticação",
       descricao: "Sistema de autenticação completo com recuperação de senha e validação em tempo real.",
-      imagem: "/img/projeto2.jpg",
+      imagem: "src/assets/projeto2.jpg",
       tecnologias: ["Python", "E-mail", "SQL"]
     },
     {
       id: 4,
       titulo: "Sistema de Automação de Envio de Mensagens em Massa pelo WhatsApp Web",
       descricao: "Sistema de automação para envio de mensagens em massa pelo WhatsApp Web utilizando PyAutoGUI, com interface de controle e agendamento de campanhas.",
-      imagem: "/img/projeto4.jpg",
+      imagem: "src/assets/projeto4.jpg",
       tecnologias: ["Python", "PyAutoGUI", "Selenium"]
     },
     {
       id: 5,
       titulo: "Baixador de Músicas Desktop",
       descricao: "Aplicação desktop para download e conversão de músicas do Spotify e YouTube para formato MP3, com interface intuitiva e processamento local.",
-      imagem: "/img/projeto5.jpg",
+      imagem: "src/assets/projeto5.jpg",
       tecnologias: ["Python", "SQLite", "FFmpeg"]
     }
   ]

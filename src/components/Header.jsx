@@ -6,7 +6,7 @@ function Header() {
       <div className="container">
         <div className="profile">
           <img 
-            src="/img/minha-foto.jpg" 
+            src="src/assets/minha-foto.jpg" 
             alt="Minha foto" 
             className="profile-photo"
           />
