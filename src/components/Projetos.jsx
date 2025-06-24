@@ -35,22 +35,38 @@ function Projetos() {
   return (
     <section className="projetos">
       <div className="container">
-        <h2>Meus Projetos</h2>
+        <div className="section-header">
+          <h2 className="section-title">
+            <span className="title-text">Meus Projetos</span>
+          </h2>
+          <p className="section-subtitle">Confira alguns dos meus trabalhos mais recentes</p>
+        </div>
+        
         <div className="projetos-grid">
           {projetos.map(projeto => (
             <div key={projeto.id} className="projeto-card">
-              <img 
-                src={projeto.imagem} 
-                alt={projeto.titulo}
-                className="projeto-imagem"
-                onError={(e) => {
-                  console.error('Erro ao carregar imagem:', projeto.imagem);
-                  e.target.style.display = 'none';
-                }}
-              />
+              <div className="projeto-imagem-container">
+                <img 
+                  src={projeto.imagem} 
+                  alt={projeto.titulo}
+                  className="projeto-imagem"
+                  onError={(e) => {
+                    console.error('Erro ao carregar imagem:', projeto.imagem);
+                    e.target.style.display = 'none';
+                  }}
+                />
+                <div className="projeto-overlay">
+                  <div className="projeto-overlay-content">
+                    <div className="view-icon">👁️</div>
+                    <span>Ver Projeto</span>
+                  </div>
+                </div>
+              </div>
+              
               <div className="projeto-info">
                 <h3>{projeto.titulo}</h3>
                 <p>{projeto.descricao}</p>
+                
                 <div className="tecnologias">
                   {projeto.tecnologias.map((tech, index) => (
                     <span key={index} className="tech-tag">{tech}</span>
@@ -59,6 +75,12 @@ function Projetos() {
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="floating-elements">
+          <div className="floating-shape shape-1"></div>
+          <div className="floating-shape shape-2"></div>
+          <div className="floating-shape shape-3"></div>
         </div>
       </div>
     </section>
