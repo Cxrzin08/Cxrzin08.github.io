@@ -8,8 +8,8 @@ const copyAssetsPlugin = () => {
   return {
     name: 'copy-assets',
     writeBundle() {
-      const srcAssetsDir = resolve(__dirname, 'src/assets');
-      const distAssetsDir = resolve(__dirname, 'dist/assets');
+      const srcAssetsDir = resolve(process.cwd(), 'src/assets');
+      const distAssetsDir = resolve(process.cwd(), 'dist/assets');
       
       if (existsSync(srcAssetsDir)) {
         // Criar diretório de destino se não existir
@@ -43,24 +43,17 @@ const copyAssetsPlugin = () => {
   };
 };
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), copyAssetsPlugin()],
+  base: '/cxrzin-potfolio.github.io/',
   server: {
-    port: 5173,
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''),
-      },
-    },
-    hmr: {
-      overlay: false,
-    },
+    allowedHosts: [
+      'cxrzin-potfolio.onrender.com'
+    ]
   },
   build: {
     outDir: 'dist',
     assetsInclude: ['**/*.jpg', '**/*.png', '**/*.svg', '**/*.gif', '**/*.webp'],
-  },
-  publicDir: 'public',
+  }
 });
