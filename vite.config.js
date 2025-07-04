@@ -46,20 +46,15 @@ const copyAssetsPlugin = () => {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), copyAssetsPlugin()],
-  base: '/cxrzin-potfolio.github.io/',
+  // Ajustar base para GitHub Pages ou Render
+  base: process.env.NODE_ENV === 'production' ? '/cxrzin-potfolio.github.io/' : '/',
   server: {
     host: '0.0.0.0',
-    port: process.env.PORT || 5173,
-    allowedHosts: [
-      'cxrzinportifoly.onrender.com',
-      'cxrzin-potfolio.onrender.com',
-      'localhost',
-      '127.0.0.1'
-    ]
+    port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
   },
   preview: {
     host: '0.0.0.0',
-    port: process.env.PORT || 4173
+    port: process.env.PORT ? parseInt(process.env.PORT) : 4173
   },
   build: {
     outDir: 'dist',

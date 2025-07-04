@@ -1,4 +1,5 @@
 import '../styles/Header.css'
+import minhaFoto from '../assets/minha-foto.jpg'
 
 function Header() {
   return (
@@ -7,7 +8,7 @@ function Header() {
         <div className="profile">
           <div className="profile-photo-container">
             <img 
-              src={`${import.meta.env.BASE_URL}assets/minha-foto.jpg`}
+              src={minhaFoto}
               alt="Minha foto" 
               className="profile-photo"
               onError={(e) => {

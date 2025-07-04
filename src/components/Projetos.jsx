@@ -1,33 +1,39 @@
 import '../styles/Projetos.css'
 
+// Importando imagens da pasta src/assets
+import projeto1Img from '../assets/projeto1.jpg'
+import projeto2Img from '../assets/projeto2.jpg'
+import projeto4Img from '../assets/projeto4.jpg'
+import projeto5Img from '../assets/projeto5.jpg'
+
 function Projetos() {
   const projetos = [
     {
       id: 1,
       titulo: "Landing Pages Profissionais",
       descricao: "Landing pages moderna e responsiva para empresas, focada em conversão e usabilidade.",
-      imagem: `${import.meta.env.BASE_URL}assets/projeto1.jpg`,
+      imagem: projeto1Img,
       tecnologias: ["HTML", "CSS", "JavaScript"]
     },
     {
       id: 2,
       titulo: "Sistemas de Logins e Autenticação",
       descricao: "Sistema de autenticação completo com recuperação de senha e validação em tempo real.",
-      imagem: `${import.meta.env.BASE_URL}assets/projeto2.jpg`,
+      imagem: projeto2Img,
       tecnologias: ["Python", "E-mail", "SQL"]
     },
     {
       id: 4,
       titulo: "Sistema de Automação de Envio de Mensagens em Massa pelo WhatsApp Web",
       descricao: "Sistema de automação para envio de mensagens em massa pelo WhatsApp Web utilizando PyAutoGUI, com interface de controle e agendamento de campanhas.",
-      imagem: `${import.meta.env.BASE_URL}assets/projeto4.jpg`,
+      imagem: projeto4Img,
       tecnologias: ["Python", "PyAutoGUI", "Selenium"]
     },
     {
       id: 5,
       titulo: "Baixador de Músicas Desktop",
       descricao: "Aplicação desktop para download e conversão de músicas do Spotify e YouTube para formato MP3, com interface intuitiva e processamento local.",
-      imagem: `${import.meta.env.BASE_URL}assets/projeto5.jpg`,
+      imagem: projeto5Img,
       tecnologias: ["Python", "SQLite", "FFmpeg"]
     }
   ]
@@ -55,12 +61,6 @@ function Projetos() {
                     e.target.style.display = 'none';
                   }}
                 />
-                <div className="projeto-overlay">
-                  <div className="projeto-overlay-content">
-                    <div className="view-icon">👁️</div>
-                    <span>Ver Projeto</span>
-                  </div>
-                </div>
               </div>
               
               <div className="projeto-info">

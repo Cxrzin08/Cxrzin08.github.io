@@ -29,19 +29,17 @@ function Stack() {
             </div>
           </div>
           
-          <div className="stack-item backend">
+          <div className="stack-item backend">s
             <div className="stack-icon">
-              <div className="icon-glow"></div>
+              <div className="icon-glow"></div>s
               <span className="emoji">⚙️</span>
             </div>
             <div className="stack-info">
               <h3>Back-end</h3>
-              <p>Trabalho com <strong>Python, Java</strong> e <strong>Kotlin</strong>. Desenvolvo APIs robustas e sistemas eficientes.</p>
+              <p>Trabalho com <strong>Python</strong> e <strong>Node.Js</strong>. Desenvolvo APIs robustas e sistemas eficientes.</p>
               <div className="tech-tags">
                 <span className="tech-tag">Python</span>
-                <span className="tech-tag">Java</span>
-                <span className="tech-tag">Kotlin</span>
-                <span className="tech-tag">APIs</span>
+                <span className="tech-tag">Node.Js</span>
               </div>
             </div>
           </div>
