@@ -6,14 +6,16 @@ const port = process.env.PORT || 3000;
 
 async function start() {
   const vite = await createServer({
-    server: { middlewareMode: 'ssr' }
+    server: { middlewareMode: true }, // Use 'true' instead of 'ssr' for compatibility
   });
   
   app.use(vite.middlewares);
 
-  app.listen(port, () => {
+  app.listen(port, '0.0.0.0', () => {
     console.log(`Server is running at http://localhost:${port}`);
   });
 }
 
-start();
+start().catch(err => {
+  console.error('Failed to start server:', err);
+});

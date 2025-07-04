@@ -46,15 +46,14 @@ const copyAssetsPlugin = () => {
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), copyAssetsPlugin()],
-  // Ajustar base para GitHub Pages ou Render
-  base: process.env.NODE_ENV === 'production' ? '/cxrzin-potfolio.github.io/' : '/',
+  base: '/', // Use '/' for Vercel; adjust if using a custom domain or subdirectory
   server: {
     host: '0.0.0.0',
     port: process.env.PORT ? parseInt(process.env.PORT) : 5173,
   },
   preview: {
     host: '0.0.0.0',
-    port: process.env.PORT ? parseInt(process.env.PORT) : 4173
+    port: process.env.PORT ? parseInt(process.env.PORT) : 3000,
   },
   build: {
     outDir: 'dist',
